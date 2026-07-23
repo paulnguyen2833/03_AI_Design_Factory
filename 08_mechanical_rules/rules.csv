@@ -1,0 +1,6 @@
+id,category,rule,value,unit,condition,evidence,status
+MR-001,Wall,Minimum wall,2.0,mm,Default FDM baseline,Needs printer validation,Provisional
+MR-002,Snap-fit,Clearance,0.25,mm,Initial test value,Needs experiment,Provisional
+MR-003,Magnet,Pocket diameter,6.15,mm,For nominal 6 mm magnet,Needs experiment,Provisional
+MR-004,Cable,Minimum bend radius,8.0,mm,Default baseline,Verify per cable,Provisional
+

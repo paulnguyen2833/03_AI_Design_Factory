@@ -1,0 +1,15 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Generated/local
+.cache/
+build/
+dist/
+
+# Large manufacturing files should use Git LFS when introduced
+*.gcode
+*.3mf.bak
+

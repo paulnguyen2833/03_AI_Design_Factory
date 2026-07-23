@@ -1,0 +1,3 @@
+id,date,product_id,title,status,options,decision,reason,approved_by,supersedes
+D-001,2026-07-23,,Adopt ADF governance,Approved,"Ad hoc|Versioned repository|External workbook",Versioned repository,"Traceability automation and reusable knowledge",PO,
+

@@ -1,0 +1,6 @@
+id,product,priority,status,target_user,value_hypothesis,risk,next_action,owner
+P001,Tammi Dock,High,Idea,Chưa xác định,Dock ổn định và dễ dùng,Chưa đo thiết bị,Thu thập kích thước và yêu cầu,PO
+P002,Apple Watch Dock,Medium,Idea,Chưa xác định,Sạc gọn và dễ in,Cạnh tranh cao,Phân tích sản phẩm tương tự,PO
+P003,ESP32 Case,High,Todo,Maker,Bảo vệ board và dễ lắp,Sai biến thể board,Xác định model ESP32,PO
+P004,Phone Stand,Medium,Idea,Người dùng điện thoại,Giá đỡ ít support,Thị trường bão hòa,Xác định điểm khác biệt,PO
+

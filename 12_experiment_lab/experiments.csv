@@ -1,0 +1,5 @@
+id,date,product_id,test,variable,value,unit,result,measurement,printer,material,profile_version,evidence
+E-001,,P001,Snap-fit clearance,clearance,0.20,mm,Planned,,,,,
+E-002,,P001,Snap-fit clearance,clearance,0.25,mm,Planned,,,,,
+E-003,,P001,Snap-fit clearance,clearance,0.30,mm,Planned,,,,,
+

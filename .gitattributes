@@ -1,0 +1,7 @@
+# Binary design artifacts. Install Git LFS and migrate these patterns before
+# committing production model files; Git LFS is not available at bootstrap time.
+*.stl binary
+*.3mf binary
+*.step binary
+*.stp binary
+*.blend binary
