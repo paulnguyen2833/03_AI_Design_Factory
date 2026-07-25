@@ -1,3 +1,3 @@
 id,date,product_id,title,status,options,decision,reason,approved_by,supersedes
 D-001,2026-07-23,,Adopt ADF governance,Approved,"Ad hoc|Versioned repository|External workbook",Versioned repository,"Traceability automation and reusable knowledge",PO,
-
+D-002,2026-07-25,,Approve ADF Handoff Guide v0.1,Approved,"Approve v0.1|Request revisions|Reject v0.1",Approve ADF Handoff Guide v0.1,"PO review completed; review reference 080ebe3557780c0ba9c46d42ecea43c078b663be",Product Owner,
