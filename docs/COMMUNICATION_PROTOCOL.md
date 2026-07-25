@@ -1,7 +1,7 @@
 # ADF Communication Protocol
 
 **Version:** v0.1  
-**Status:** Draft  
+**Status:** Approved  
 **Owner:** Product Owner
 
 ## 1. Purpose
