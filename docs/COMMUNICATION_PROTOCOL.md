@@ -6,10 +6,10 @@
 
 ## 1. Purpose
 
-This document is the single source of truth for communication standards within
-the AI Design Factory (ADF). It defines how intent, proposals, instructions,
-decisions, approvals, evidence, problems, and results are exchanged so that work
-remains clear, traceable, and safe.
+When approved, this document is the authoritative source for communication
+semantics within the AI Design Factory (ADF). It defines how intent, proposals,
+instructions, decisions, approvals, evidence, problems, and results are
+exchanged so that work remains clear, traceable, and safe.
 
 Project authority, artifact states, IDs, versioning, and approval ownership
 remain defined by `AGENTS.md` and `docs/GOVERNANCE.md`.
@@ -23,6 +23,10 @@ lifecycle.
 It governs the meaning, minimum content, authority, handoff, acknowledgement,
 and recording of messages. It does not define software implementation, APIs,
 databases, dashboards, data schemas, or user interfaces.
+
+This protocol defines the meaning and minimum content of a handoff. File names,
+directory layout, templates, and preparation procedures belong in a separate
+Handoff Guide.
 
 ## 3. Communication Principles
 
@@ -100,8 +104,9 @@ The standard flow is:
    task and works only within the authorized scope.
 8. **Verification:** the executor reports validation, evidence, limitations,
    changes, and open issues.
-9. **Review:** the PO accepts the result, requests changes, or makes the next
-   decision. Physical test results require PO-supplied or PO-confirmed evidence.
+9. **Review:** the PO execution-accepts the task deliverables, requests changes,
+   or makes the next decision. Execution acceptance does not grant lifecycle
+   approval. Physical test results require PO-supplied or PO-confirmed evidence.
 10. **Close or continue:** records are synchronized, and the next task is
     identified. Superseded communication is archived rather than deleted.
 
@@ -116,18 +121,40 @@ missing, conflicting, unsafe, or outside its authority.
 | Question | Resolve ambiguity | Specific unknown; why it matters; responder needed |
 | Proposal | Offer alternatives | Options; trade-offs; recommendation; assumptions |
 | Instruction | Authorize bounded work | Objective; scope; deliverables; constraints; acceptance criteria |
-| Approval Request | Ask for a PO gate | Artifact/version; decision requested; evidence; unresolved risks |
-| Approval Decision | Record PO authority | Approved/rejected item and version; conditions; PO identity; date |
+| Approval Request | Ask for a named lifecycle gate | Artifact/version; exact gate; decision requested; evidence; unresolved risks |
+| Lifecycle Approval | Record PO authority over an artifact or lifecycle transition | Exact gate; approved/rejected artifact and version; conditions; PO identity; date |
 | Handoff | Transfer actionable context | Active task; authoritative inputs; current state; exclusions; next owner |
 | Progress Update | Communicate ongoing work | Completed work; current work; blockers; changed assumptions |
 | Result | Report completed work | Outcome; files/artifacts changed; validation; limitations; open issues |
+| Execution Acceptance | Confirm task criteria are satisfied | Task and deliverable versions; acceptance criteria; PO identity; date; excluded lifecycle gates |
 | Evidence | Support a claim | Source; method or tool; date; applicable scope; confidence |
 | Issue | Report a problem | Observed and expected behavior; impact; evidence; owner or escalation |
 | Decision Proposal | Request a material choice | Context; alternatives; consequences; recommended option |
 | Correction | Replace incorrect information | Incorrect statement; corrected statement; affected artifacts |
 
 A message may contain more than one type, but each type and its authority must be
-clear. Approval decisions must never be implied inside another message type.
+clear. Lifecycle approval must never be implied inside another message type.
+
+### 6.1 Common Message Metadata
+
+Every durable message must make the following metadata identifiable:
+
+| Field | Semantic requirement |
+|---|---|
+| Message type | One or more types defined by this protocol |
+| Sender | Person, system, tool, or agent that originated the message |
+| Recipient or responsible role | Participant expected to respond, decide, or act |
+| Date and time | When the message was issued, including timezone when material |
+| Related Product ID | Product context, or an explicit indication that it is not applicable |
+| Related record IDs | Relevant Task, Issue, Decision, Experiment, or Prompt IDs |
+| Artifact and version | Exact subject of the message when an artifact is involved |
+| Authority level | Informational, proposed, authorized execution, execution acceptance, or lifecycle approval |
+| Requested action | Action or decision expected from the recipient |
+| Current state | Communication state defined in Section 8 |
+
+These are semantic requirements, not an API, file format, or data schema. A
+field may be marked not applicable, but must not be silently omitted when its
+absence could change authority, scope, or interpretation.
 
 ## 7. Communication Rules
 
@@ -155,6 +182,13 @@ clear. Approval decisions must never be implied inside another message type.
     silently expanding scope.
 12. Communication must remain concise, respectful, and understandable without
     relying on inaccessible conversation history.
+13. Execution acceptance confirms only that task deliverables satisfy the
+    active task's acceptance criteria.
+14. Lifecycle approval explicitly authorizes a named product artifact or
+    lifecycle transition.
+15. Accepting a task result never approves a concept, mechanical design,
+    production, release, or publication unless the PO explicitly names that
+    lifecycle gate.
 
 ## 8. Communication States
 
@@ -171,13 +205,17 @@ Experiment:
 | In Progress | An authorized participant is acting on it |
 | Blocked | Work cannot continue without information, authority, or an external change |
 | Reported | Result and validation have been communicated |
-| Accepted | PO has accepted the communicated result within the stated scope |
-| Rejected | PO has declined the proposal or result |
+| Execution Accepted | PO confirms that task deliverables satisfy the task acceptance criteria; no lifecycle gate is implied |
+| Lifecycle Approved | PO explicitly authorizes the named artifact or lifecycle transition |
+| Rejected | PO has declined the proposal, result, or explicitly named lifecycle approval request |
 | Superseded | A newer communication item replaces it while preserving history |
 | Archived | Retained for traceability and no longer active |
 
-Only the PO may move an approval request to `Accepted` or `Rejected`. An agent
-may mark its execution result `Reported`, but not PO-accepted.
+Only the PO may set `Execution Accepted`, `Lifecycle Approved`, or `Rejected`.
+An agent may mark its execution result `Reported`, but may not accept its own
+work or approve a lifecycle gate. Execution acceptance never implies approval
+of a concept, mechanical design, production, release, or publication unless the
+PO explicitly names that gate.
 
 ## 9. Error Handling
 

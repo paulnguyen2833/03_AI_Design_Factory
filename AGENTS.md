@@ -12,16 +12,20 @@ in the relevant repository module.
 
 When sources conflict, use this order:
 
-1. PO-approved Product Specification in `06_specifications/`.
-2. Approved Decision records in `11_decision_log/`.
-3. Approved architecture and lifecycle documents.
-4. The active task, limited to its authorized scope.
-5. Validated mechanical rules, experiments, and AI Memory.
-6. Other repository documentation and knowledge-base material.
+1. The latest explicit PO approval applicable to the current work.
+2. Approved Decisions that supersede an earlier requirement or specification.
+3. The current PO-approved Product Specification in `06_specifications/`.
+4. Approved architecture, lifecycle, and governance documents.
+5. The active task, limited to its authorized scope.
+6. Validated mechanical rules, experiments, and AI Memory.
+7. Other repository documentation and knowledge-base material.
 
 Approval must be explicit and recorded. A draft, example, template, backlog
 item, prompt, or AI suggestion is not an approved requirement. If a conflict
 cannot be resolved by this order, stop the affected work and ask the PO.
+
+An approved Decision may authorize a specification change, but the affected
+specification must be synchronized before dependent work continues.
 
 ## Files to Read Before Working
 
