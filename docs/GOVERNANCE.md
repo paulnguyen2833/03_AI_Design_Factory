@@ -60,6 +60,7 @@ Một sản phẩm chỉ được `Done` khi:
 - File sản xuất có version.
 - Có kết quả in thử và test.
 - Issue nghiêm trọng đã đóng hoặc được PO chấp nhận.
-- Cost, marketplace metadata và bài học đã được ghi.
+- Cost, release metadata, and relevant lessons have been recorded.
+- Marketplace metadata is required only when publication is included in the
+  approved product scope.
 - AI Memory đã nhận các kết luận có bằng chứng.
-

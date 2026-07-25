@@ -14,8 +14,9 @@ establishes the stages, transitions, required artifacts, responsibilities,
 approval gates, return paths, and completion criteria needed to keep product
 work controlled, traceable, and reviewable.
 
-Because this version is a draft, it is a proposal and has no lifecycle approval
-authority until the Product Owner (PO) explicitly approves it.
+Approval of this document establishes these lifecycle semantics. Individual
+product artifacts and transitions still require explicit Product Owner (PO)
+approval at their named gates.
 
 ## 2. Scope
 

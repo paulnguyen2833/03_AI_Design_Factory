@@ -13,9 +13,8 @@ It establishes how durable project information is represented, identified,
 versioned, referenced, validated, and exchanged while remaining readable,
 traceable, and governed.
 
-This draft has no authority until the Product Owner (PO) explicitly approves
-version v0.1. It defines meaning and format-selection policy, not an
-implementation.
+Approval of this document establishes semantic meaning and format-selection
+policy. It does not authorize implementation.
 
 ## 2. Scope
 

@@ -14,8 +14,8 @@ agents. It operationalizes the `Handoff` message defined by
 `docs/COMMUNICATION_PROTOCOL.md` so that a receiver can act on distilled
 context and bounded authority without relying on inaccessible chat history.
 
-This draft is a proposal. It does not approve itself, a task, an artifact, or a
-product lifecycle gate.
+Approval of this guide does not approve a task, an artifact, or a product
+lifecycle gate.
 
 ## 2. Scope
 
