@@ -113,8 +113,11 @@ The normal forward path is:
 Revision is an explicit control stage rather than a mandatory pass-through for
 every successful product. A product may move from Physical Testing directly to
 Release Preparation when the evidence satisfies the approved specification and
-the PO accepts the applicable results and risks. Maintenance may send the
-product back to any earlier stage affected by a proposed change.
+the PO accepts the applicable results and risks. Marketplace Publication is
+optional unless publication is part of the approved product scope. A
+PO-approved release may move directly from Release Preparation to Maintenance
+without marketplace publication. Maintenance may send the product back to any
+earlier stage affected by a proposed change.
 
 ## 6. Detailed Stage Definitions
 
@@ -369,8 +372,8 @@ product back to any earlier stage affected by a proposed change.
 - **Exit criteria:** Governance Definition of Done evidence is satisfied or
   exceptions are explicitly accepted; the exact release candidate and residual
   risks have PO approval.
-- **Allowed next stages:** Marketplace Publication, Revision, Mechanical Design,
-  Physical Testing, or Archive.
+- **Allowed next stages:** Marketplace Publication, Maintenance, Revision,
+  Mechanical Design, Physical Testing, or Archive.
 - **Return conditions:** missing evidence returns to Physical Testing; design or
   specification defects return to the earliest affected stage; package defects
   remain in Release Preparation.
@@ -569,11 +572,15 @@ satisfied and the repository demonstrates that:
 - authorized prototype printing and physical testing produced recorded evidence;
 - physical results and residual risks were accepted by the PO;
 - serious Issues are closed or explicitly accepted by the PO;
-- cost, marketplace metadata, release artifacts, and relevant lessons are
-  recorded;
+- cost, release artifacts, relevant lessons, and marketplace metadata when
+  publication is included in the approved product scope are recorded;
 - evidence-backed conclusions are synchronized to AI Memory; and
-- the exact release and any publication action received their required explicit
-  PO approval or authorization.
+- the exact release received PO approval, and any publication action included
+  in the approved product scope received separate explicit PO authorization.
+
+Marketplace publication is not required for `Done` unless it is included in the
+approved product scope. When included, it remains a separate external action
+requiring explicit PO authorization.
 
 `Done` is a Product status, not a communication state or task status. A product
 may later enter Maintenance, and retirement moves it to `Archived` without

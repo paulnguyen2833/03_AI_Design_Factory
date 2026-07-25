@@ -2,7 +2,9 @@
 
 **Version:** v0.1  
 **Status:** Approved  
-**Owner:** Product Owner
+**Owner:** Product Owner  
+**Approved by:** Product Owner  
+**Approved date:** 2026-07-25
 
 ## 1. Purpose
 
