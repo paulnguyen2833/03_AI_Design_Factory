@@ -1,8 +1,10 @@
 # ADF Data Standard
 
 **Version:** v0.1  
-**Status:** Draft  
-**Owner:** Product Owner
+**Status:** Approved  
+**Owner:** Product Owner  
+**Approved by:** Product Owner  
+**Approved date:** 2026-07-25
 
 ## 1. Purpose
 
