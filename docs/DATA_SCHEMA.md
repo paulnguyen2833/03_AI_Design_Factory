@@ -102,7 +102,9 @@ YAML must not contain executable code, secrets, anchors or aliases that obscure
 meaning, or implicit values that create ambiguity. Values such as dates,
 booleans, nulls, and numeric-looking identifiers should be represented so their
 intended semantics remain unambiguous. This document does not define a final
-YAML schema.
+YAML schema. Date-like and timestamp-like values in machine-oriented YAML
+examples must be explicitly quoted strings unless a future approved schema
+specifies another representation.
 
 ### 5.3 CSV
 
@@ -176,6 +178,12 @@ JSON. This standard defines meaning, not final field spelling for every
 implementation. A field may be `Unknown` or `Not applicable` when accurate, but
 must not be blank when blank could conceal uncertainty, authority, scope, or
 interpretation.
+
+Artifact `status` and `approval state` are separate only when both a workflow
+or lifecycle state and an approval state are required. If both are present,
+their meanings must be semantically consistent and their governing state
+domains must be identifiable. Do not duplicate the same meaning in both fields
+when one field is sufficient.
 
 ## 7. Identity and ID Rules
 
@@ -285,6 +293,11 @@ The applicable state vocabulary must be named or inferable from artifact type:
 Never infer one domain from another. A completed task, approved Decision, merged
 commit, or accepted execution result does not automatically advance a Product
 lifecycle gate.
+
+The final Task status vocabulary has not yet been approved. Existing repository
+values may continue to be used, but a future schema must not enforce a final
+Task-status enumeration without explicit PO approval. This document does not
+define that vocabulary.
 
 Durable approval data identifies:
 
@@ -507,9 +520,8 @@ version: v0.3
 status: Draft
 owner: Product Owner
 author_or_generator: ADF design agent
-created: 2026-07-25
-updated: 2026-07-25T14:30:00Z
-approval_state: Draft
+created: "2026-07-25"
+updated: "2026-07-25T14:30:00Z"
 approver: Not applicable
 approval_date: Not applicable
 supersedes: v0.2
@@ -552,7 +564,7 @@ The task status reports execution progress and grants no lifecycle approval.
 evidence_type: Physical measurement
 source: PO-supplied caliper reading
 collector: Product Owner
-collected_at: 2026-07-25T20:15:00+07:00
+collected_at: "2026-07-25T20:15:00+07:00"
 product_id: P042
 related_artifact: Device interface measurement
 original_value: 31.40
