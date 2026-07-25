@@ -1,5 +1,4 @@
 task_id,sprint,product_id,title,status,priority,owner,acceptance_criteria
-T-001,S001,P001,Thu thập requirement,Todo,High,PO,Requirement v0.1 được xác nhận
+T-001,S001,P001,Thu thập requirement,Doing,High,PO,Requirement v0.1 được xác nhận
 T-002,S001,P001,Tạo ba concept,Todo,High,AI,Ba phương án có trade-off
-T-003,S001,P001,Đo thiết bị và phụ kiện,Todo,High,PO,Bảng đo có ảnh hoặc nguồn đo
-
+T-003,S001,P001,Đo thiết bị và phụ kiện,Doing,High,PO,Bảng đo có ảnh hoặc nguồn đo

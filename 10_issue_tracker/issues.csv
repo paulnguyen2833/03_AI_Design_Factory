@@ -1,2 +1,4 @@
 id,product_id,title,severity,status,root_cause,solution,owner,opened,closed
-
+I-001,P001,Verified device and charger dimensions are missing,High,Open,PO measurement evidence has not been supplied,Collect the requested watch charger and cable measurements with evidence,PO,2026-07-25,
+I-002,P001,Printer and material profile are undefined,High,Open,Printer nozzle material and profile inputs have not been supplied,PO confirms the intended printer setup and manufacturing constraints,PO,2026-07-25,
+I-003,P001,Commercial character licensing basis is unresolved,High,Open,Commercial-use rights or an original character direction have not been established,PO defines intended use and selects an original or appropriately licensed character,PO,2026-07-25,
