@@ -1,7 +1,10 @@
 # Specification — Pxxx — v0.1
 
 **Status:** Draft  
-**Approved by PO:** No
+**Approved by:** Not applicable
+**Approved date:** Not applicable
+**Approval gate:** Specification
+**Decision:** Not applicable
 
 | Thuộc tính | Giá trị | Dung sai/điều kiện | Nguồn |
 |---|---|---|---|
@@ -37,4 +40,3 @@ Liệt kê mặt lắp ghép, hướng lắp, lực, clearance và dependency.
 | Version | Date | Change | Decision |
 |---|---|---|---|
 | v0.1 | YYYY-MM-DD | Initial draft | N/A |
-

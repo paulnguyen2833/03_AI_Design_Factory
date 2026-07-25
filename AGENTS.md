@@ -37,6 +37,9 @@ that any named file exists. When available, read:
 - `docs/COMMUNICATION_PROTOCOL.md`
 - `docs/PRODUCT_LIFECYCLE.md`
 - `docs/GOVERNANCE.md`
+- `docs/HANDOFF_GUIDE.md` when the task involves context transfer or handoffs.
+- `docs/DATA_SCHEMA.md` when the task creates, modifies, validates, migrates,
+  or exchanges durable ADF data.
 - The active task.
 - The relevant Product Specification under `06_specifications/`.
 - Related approved decisions, issues, experiments, and mechanical rules.

@@ -19,6 +19,9 @@ Ai dùng, trong bối cảnh nào?
 |---|---|---|---|---|
 | R-001 |  | Must |  | PO |
 
+`R-001` is currently a local Product requirement reference, not a
+repository-governed permanent ID convention.
+
 ## Constraints
 
 | Thuộc tính | Giá trị |
@@ -59,4 +62,3 @@ Concept được chọn phải tham chiếu Decision ID.
 - Issues:
 - Experiments:
 - Marketplace:
-

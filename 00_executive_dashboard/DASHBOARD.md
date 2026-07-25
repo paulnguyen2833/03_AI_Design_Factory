@@ -4,8 +4,9 @@
 
 | Chỉ số | Giá trị |
 |---|---:|
-| Current Sprint | Chưa bắt đầu |
-| Progress | 0% |
+| Foundation | ADF Foundation v0.1 — Approved |
+| Current Product Sprint | S001 |
+| Current Product | P001 |
 | Open Issues | 0 |
 | Models Finished | 0 |
 | Published | 0 |
@@ -19,7 +20,5 @@
 
 ## Cần PO quyết định
 
-- Chọn sản phẩm P001.
 - Xác nhận máy in, nozzle và vật liệu mặc định.
-- Xác nhận thị trường phát hành đầu tiên.
-
+- Xác nhận target market và thị trường phát hành đầu tiên.

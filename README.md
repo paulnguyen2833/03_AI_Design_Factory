@@ -17,6 +17,26 @@ ADF là hệ điều hành cho vòng đời sản phẩm: ý tưởng → yêu c
 7. Sau mỗi lần thử, cập nhật Experiment, Issue và AI Memory.
 8. Chạy `./scripts/validate.sh` trước khi commit.
 
+## Foundation Documents
+
+`ADF Foundation v0.1` is the approved governance and document foundation.
+
+- [`AGENTS.md`](AGENTS.md) defines source priority and agent operating rules.
+- [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md) defines governance, IDs, versions,
+  standard states, and repository-level completion rules.
+- [`docs/COMMUNICATION_PROTOCOL.md`](docs/COMMUNICATION_PROTOCOL.md) defines
+  communication semantics, authority, and durable message requirements.
+- [`docs/PRODUCT_LIFECYCLE.md`](docs/PRODUCT_LIFECYCLE.md) defines product
+  stages, transitions, return paths, and lifecycle approval gates.
+- [`docs/HANDOFF_GUIDE.md`](docs/HANDOFF_GUIDE.md) defines the standard handoff
+  package and context-transfer procedure.
+- [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) defines semantic data meaning,
+  format selection, identity, versioning, and validation policy.
+
+Existing `S001` in the Sprint Board remains the first `P001` Product Sprint.
+The `ADF Foundation v0.1` initiative is not a Product Sprint ID and must not be
+confused with `S001`.
+
 > Git LFS chưa có trên máy tại thời điểm bootstrap. Hãy cài và cấu hình Git LFS
 > cho `*.stl`, `*.3mf`, `*.step`, `*.stp`, `*.blend` trước khi commit model sản xuất.
 
