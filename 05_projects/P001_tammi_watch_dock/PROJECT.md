@@ -94,8 +94,10 @@ The watch back is described as convex with rounded corners. Side and back radii
 remain `TBD`. Photographs visibly support four watch contacts, two charger
 alignment magnets, and two charger electrical pins; these observations are
 classified as `image_supported`, not dimensional measurements. Original
-photographs are not stored because sanitized copies without QR codes, serial
-identifiers, or IMEI information are not available.
+back-label photographs are not stored because sanitized copies without QR
+codes, serial identifiers, or IMEI information are not available. Eight
+privacy-reviewed views are indexed under
+`evidence/2026-07-26_measurements/README.md`.
 
 The former simulation values `50.0 × 42.0 × 15.0 mm` for the watch and
 `25.4 × 8.4 mm` for the charger are `simulation_only` and are superseded for
@@ -232,8 +234,8 @@ identified explicitly and are not production evidence.
 
 | Measurement item | Symbol/local ref | Value | Unit | Measurement method/tool | Number of measurements | Source | Evidence reference | Uncertainty or limitation | Status |
 |---|---|---:|---|---|---:|---|---|---|---|
-| Watch overall width | M-W01 | 53.0 | mm | PO measurement; tool not recorded | TBD | Product Owner | PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
-| Watch overall height | M-W02 | 42.5 | mm | PO measurement; tool not recorded | TBD | Product Owner | PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
+| Watch overall width | M-W01 | 53.0 | mm | PO measurement; tool not recorded | TBD | Product Owner | EV-003; PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
+| Watch overall height | M-W02 | 42.5 | mm | PO measurement; tool not recorded | TBD | Product Owner | EV-003; PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
 | Watch overall thickness | M-W03 | 16.0 maximum; 14.5 center | mm | PO measurement; tool not recorded | TBD | Product Owner | PO input 2026-07-26 | Convex back; back radius TBD | user_measured |
 | Screen/control clearance | M-W04 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
 | Strap width | M-W05 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
@@ -241,12 +243,12 @@ identified explicitly and are not production evidence.
 | Minimum practical strap bend or placement clearance | M-W07 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
 | Charging contact position relative to watch edges | M-W08 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
 | Charging surface orientation | M-W09 | Rear of watch; exact datum TBD | Not applicable | PO input and photograph observation | TBD | Product Owner | PO input 2026-07-26 | Exact orientation and datum remain TBD | image_supported |
-| Charging-head overall length | M-C01 | 25.2 | mm | PO measurement; tool not recorded | TBD | Product Owner | PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
-| Charging-head overall width | M-C02 | 8.2 | mm | PO measurement; tool not recorded | TBD | Product Owner | PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
+| Charging-head overall length | M-C01 | 25.2 | mm | PO measurement; tool not recorded | TBD | Product Owner | EV-001; EV-002; PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
+| Charging-head overall width | M-C02 | 8.2 | mm | PO measurement; tool not recorded | TBD | Product Owner | EV-001; EV-002; PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
 | Charging-head overall thickness | M-C03 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
 | Cable entry location on charging head | M-C04 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
-| Cable diameter | M-C05 | 2.8 | mm | PO measurement; tool not recorded | TBD | Product Owner | PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
-| Connector retention features | M-C06 | Two alignment magnets visible | Not applicable | Photograph observation | Not applicable | Product Owner | PO input 2026-07-26 | Sanitized photograph reference unavailable | image_supported |
+| Cable diameter | M-C05 | 2.8 | mm | PO measurement; tool not recorded | TBD | Product Owner | EV-001; EV-002; PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
+| Connector retention features | M-C06 | Two alignment magnets visible | Not applicable | Photograph observation | Not applicable | Product Owner | EV-001; EV-002 | Magnet function and direction require confirmation | image_supported |
 | Magnetic attachment direction | M-C07 | TBD | Not applicable | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
 | Required connector removal clearance | M-C08 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
 | Minimum observed comfortable cable bend radius | M-R01 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |

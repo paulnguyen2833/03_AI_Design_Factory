@@ -91,8 +91,10 @@ approved coupon plan rather than selected silently.
 | Small pinhole | Keep open | Function `TBD`; presumed microphone |
 | Strap hinges | Allow rotation; do not load hinge joints | `image_supported`; exact clearance `TBD` |
 
-No original photograph may be committed until QR codes, serial identifiers, and
-IMEI information have been removed.
+Privacy-reviewed front, side, and charger photographs are indexed under
+`evidence/2026-07-26_measurements/README.md`. Back-label and charging-recess
+photographs must not be committed until QR codes, serial identifiers, and IMEI
+information have been removed.
 
 ## Required Approval Sequence
 
@@ -116,4 +118,3 @@ authorization.
 - I-001 through I-010 are considered in the plan.
 - PO approval requests for CAD, printable output, and printing remain separate.
 - No CAD, sliced file, purchase, or external action has occurred.
-
