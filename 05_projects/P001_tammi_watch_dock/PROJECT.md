@@ -287,7 +287,7 @@ identified explicitly and are not production evidence.
 
 ## Next Review
 
-On 2026-07-26 the PO approved the exact `FIT_TEST_PLAN_v0.1.md`, accepted its
+On 2026-07-27 the PO approved the exact `FIT_TEST_PLAN_v0.1.md`, accepted its
 documented measurement limitations, and authorized generation of only
 `Fit-Test Coupon CAD v0.1`; D-008 records that authority. A neutral mechanical
 coupon does not require full character concept approval. This authorization

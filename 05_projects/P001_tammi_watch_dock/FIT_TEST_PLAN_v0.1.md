@@ -6,8 +6,8 @@
 **Related task:** T-004  
 **Approval state:** Approved  
 **Approved by:** Product Owner  
-**Approved date:** 2026-07-26  
-**Measurement limitations accepted:** Yes; 2026-07-26  
+**Approved date:** 2026-07-27  
+**Measurement limitations accepted:** Yes; 2026-07-27  
 **Authorized CAD:** `Fit-Test Coupon CAD v0.1`  
 **Authorization decision:** D-008  
 **Printable output authorized:** No  
@@ -17,6 +17,20 @@ Approval of this plan authorizes only generation of the named experimental
 `Fit-Test Coupon CAD v0.1`. It does not authorize Product Mechanical Design CAD,
 slicing, purchasing, printable-output generation, or sending anything to a
 printer.
+
+## Approval Review Record
+
+- **Review date:** 2026-07-27
+- **Reviewer and authority:** Product Owner
+- **Decision:** D-008
+- **Approval reference:** PO confirmation correcting the approval date;
+  repository record commit
+  `40fb472f225fa61a87de069e170c7d35c6dc25a9`
+- **Minute:** the PO approved `FIT_TEST_PLAN_v0.1.md`, accepted its documented
+  measurement limitations, and authorized only `Fit-Test Coupon CAD v0.1`.
+  Printable output and sending anything to a printer remain unauthorized.
+- **Correction:** this review record supersedes the previously recorded
+  2026-07-26 approval date without changing authorization scope.
 
 ## CAD Scope Distinction
 
@@ -130,7 +144,7 @@ Before generating `Fit-Test Coupon CAD v0.1`, the Product Owner must explicitly:
 2. accept the measurement limitations documented in that version; and
 3. authorize generation of the named `Fit-Test Coupon CAD v0.1`.
 
-The Product Owner satisfied these three conditions on 2026-07-26, recorded by
+The Product Owner satisfied these three conditions on 2026-07-27, recorded by
 D-008. The authorization is active only for `Fit-Test Coupon CAD v0.1` and does
 not expand the scope below.
 
@@ -138,10 +152,11 @@ Full character concept approval is not required for this neutral mechanical
 coupon. Coupon authorization does not approve any draft Requirement, Product
 Specification, concept, Product Mechanical Design, printable output, or print.
 
-Coupon geometry and generated files are not evidence. Coupon results become
-physical evidence only after an authorized coupon is physically tested, the
-method and observations are recorded, and the Product Owner confirms the
-physical results and their limitations.
+Coupon CAD and generated files are design artifacts, not physical fit-test
+evidence. Fit-test observations and results become physical evidence only after
+an authorized coupon is physically tested, the method and observations are
+recorded, and the Product Owner confirms the physical results and their
+limitations.
 
 After coupon CAD review, separate explicit PO approval is required before
 generating printable output. A further separate explicit PO authorization is
