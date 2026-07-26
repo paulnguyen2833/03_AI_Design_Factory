@@ -91,12 +91,13 @@ dimensional evidence package.
 | Strain-relief width | approximately 5.2 | mm | `user_measured` | Approximate; requires confirmation |
 
 The watch back is described as convex with rounded corners. Side and back radii
-remain `TBD`. Photographs visibly support four watch contacts, two charger
-alignment magnets, and two charger electrical pins; these observations are
-classified as `image_supported`, not dimensional measurements. Original
-back-label photographs are not stored because sanitized copies without QR
-codes, serial identifiers, or IMEI information are not available. Eight
-privacy-reviewed views are indexed under
+remain `TBD`. EV-001 and EV-002 directly support two charger alignment magnets
+and two charger electrical pins as `image_supported` observations. The four
+watch contacts and rear charging-surface orientation are temporarily classified
+as `PO-reported observation`; verification is pending privacy-safe rear
+charging-interface evidence. Original back-label photographs are not stored
+because sanitized copies without QR codes, serial identifiers, or IMEI
+information are not available. Eight privacy-reviewed views are indexed under
 `evidence/2026-07-26_measurements/README.md`.
 
 The former simulation values `50.0 × 42.0 × 15.0 mm` for the watch and
@@ -106,12 +107,13 @@ artifact and must not be treated as evidence.
 
 ## Requirement v0.1
 
-The references `R-001` through `R-019` are local P001 requirement references.
+The references `R-001` through `R-024` are local P001 requirement references.
 They are not repository-governed permanent IDs.
 
 All requirements and acceptance criteria below are draft proposals pending PO
 review. Any dimensional criterion remains `TBD` until PO-supplied measurement
-evidence and applicable print evidence exist.
+evidence and applicable print evidence exist. R-020 through R-024 are
+explicitly `Draft/Pending` and have no approval authority.
 
 ### Functional Requirements
 
@@ -125,6 +127,11 @@ evidence and applicable print evidence exist.
 | R-006 | The watch can be placed and removed without excessive force. | Must | Proposed usability requirement | PO testing confirms placement and removal are comfortable and do not damage the watch, strap, connector, or dock; force criterion `TBD`. | Derived from product intent; T-001 |
 | R-007 | The screen and primary controls remain accessible where applicable. | Should | Proposed usability requirement | PO review confirms required screen and control access in the intended charging position; clearance `TBD`. | Derived from usage context; T-001; T-003 |
 | R-008 | The dock remains stable during normal placement and removal. | Must | PO statement under review | A prototype does not tip or slide unacceptably during PO-confirmed intended use; test method and thresholds `TBD`. | PO input; T-001 |
+| R-020 | The watch supports one-handed placement in the intended charging position. | Must | PO statement under review | PO physical testing confirms the watch can be placed with one hand and reaches the intended supported position without forced manipulation; method and force criterion `TBD`. | PO input 2026-07-26; T-001; T-004 |
+| R-021 | Normal placement does not require removal of either watch strap. | Must | PO statement under review | PO physical testing confirms the identified watch can be placed and removed with both straps attached and without strap damage or unintended release. | PO input 2026-07-26; EV-004; EV-005; T-004 |
+| R-022 | The dock preserves magnetic self-alignment between the original charger and watch. | Must | PO statement under review | PO physical testing confirms the original charger can magnetically self-align to the watch without forced lateral positioning by the dock; alignment tolerance `TBD`. | PO input 2026-07-26; EV-001; EV-002; T-004 |
+| R-023 | The orange button, adjacent side openings, small pinhole, and opposite-side cover remain unobstructed. | Must | PO statement under review | Inspection in the intended position confirms no dock feature presses the orange button or covers the visible openings or pinhole and the opposite-side cover remains accessible; exact keepouts `TBD`. | PO input 2026-07-26; EV-006; EV-007; EV-008; I-009; T-004 |
+| R-024 | Normal placement does not transmit support or clamping load through the strap hinges. | Must | PO statement under review | PO physical inspection confirms the watch body carries the normal support load while both strap hinges retain required movement without being used as hard locating or clamping points; load criterion `TBD`. | PO input 2026-07-26; EV-004; EV-005; EV-007; T-004 |
 
 ### Manufacturing Requirements
 
@@ -222,6 +229,8 @@ This Requirement-discovery record does not:
 | Which screen areas and controls must remain accessible while charging? | Product Owner | Yes | Interface clearance |
 | What placement/removal behavior would the PO consider comfortable? | Product Owner | No until usability criteria are finalized | Acceptance criteria |
 | What are the authoritative functions and exact keepouts for the side openings, pinhole, button, and cover? | Product Owner | Yes before geometry is locked | I-009; T-004 |
+| Can the PO provide a privacy-safe rear charging-interface view confirming the four watch contacts and charging-surface orientation? | Product Owner | Yes before those observations become image-supported | I-010; T-003 |
+| Does the PO approve the exact Fit-Test Plan v0.1, accept its documented measurement limitations, and authorize the named Fit-Test Coupon CAD v0.1? | Product Owner | Yes before experimental coupon CAD | T-004 |
 
 ## Measurement Dependencies
 
@@ -242,7 +251,7 @@ identified explicitly and are not production evidence.
 | Strap thickness | M-W06 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
 | Minimum practical strap bend or placement clearance | M-W07 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
 | Charging contact position relative to watch edges | M-W08 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
-| Charging surface orientation | M-W09 | Rear of watch; exact datum TBD | Not applicable | PO input and photograph observation | TBD | Product Owner | PO input 2026-07-26 | Exact orientation and datum remain TBD | image_supported |
+| Charging surface orientation | M-W09 | Rear of watch; exact datum TBD | Not applicable | PO-reported observation | TBD | Product Owner | PO input 2026-07-26 | Privacy-safe rear-view evidence unavailable; exact datum TBD | PO-reported observation |
 | Charging-head overall length | M-C01 | 25.2 | mm | PO measurement; tool not recorded | TBD | Product Owner | EV-001; EV-002; PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
 | Charging-head overall width | M-C02 | 8.2 | mm | PO measurement; tool not recorded | TBD | Product Owner | EV-001; EV-002; PO input 2026-07-26 | Repetitions and uncertainty not recorded | user_measured |
 | Charging-head overall thickness | M-C03 | TBD | mm | TBD | TBD | Product Owner | TBD | Unknown | Unknown |
@@ -278,10 +287,18 @@ identified explicitly and are not production evidence.
 
 ## Next Review
 
-Before CAD generation, the PO must explicitly approve the governing Requirement
-and Specification versions, select and approve a concept, resolve or accept the
-remaining measurement limitations, and explicitly authorize generation of the
-named CAD deliverable. Approval to prepare CAD is not authorization to generate
-printable output or send anything to a printer.
+Before generation of the experimental `Fit-Test Coupon CAD v0.1`, the PO must
+approve the exact `FIT_TEST_PLAN_v0.1.md`, accept its documented measurement
+limitations, and explicitly authorize that named coupon CAD deliverable. A
+neutral mechanical coupon does not require full character concept approval.
+Coupon authorization does not approve a Product Specification or Product
+Mechanical Design.
+
+Product Mechanical Design CAD remains subject to the normal lifecycle gates:
+the governing Requirement and Product Specification versions and selected
+concept must be PO-approved, and the PO must explicitly authorize the named
+mechanical-design work. Separate PO approval is required before generating
+printable output, and separate PO authorization is required before sending
+anything to a printer.
 
 The recommended next review is D-007 and the proposed T-004 fit-test plan.

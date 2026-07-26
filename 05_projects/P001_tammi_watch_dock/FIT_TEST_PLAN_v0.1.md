@@ -11,6 +11,19 @@
 This is a documentation and planning artifact only. It does not authorize CAD,
 slicing, purchasing, printable-output generation, or printing.
 
+## CAD Scope Distinction
+
+- **Experimental Fit-Test Coupon CAD:** limited test geometry for charger
+  pocket, cable channel, strain relief, partial watch support, body location,
+  and keepout inspection. It is not Product Mechanical Design.
+- **Product Mechanical Design CAD:** the complete product geometry governed by
+  approved Requirement, Product Specification, concept, and mechanical-design
+  lifecycle gates.
+
+A neutral Experimental Fit-Test Coupon does not require approval of a full
+character concept. Authorization for coupon CAD does not approve a Product
+Specification, concept, Product Mechanical Design, printable output, or print.
+
 ## Proposed Architecture
 
 Decision D-007 proposes two replaceable layers:
@@ -72,6 +85,12 @@ The future fit-test should contain only:
 - inspection access for the orange button, side openings, pinhole,
   opposite-side cover, and strap hinges.
 
+The inspection must evaluate the draft R-020 through R-024 intent at coupon
+scope: one-handed placement, placement with straps attached, magnetic
+self-alignment, unobstructed keepouts, and absence of normal support or
+clamping load through the strap hinges. Coupon inspection can expose a
+geometry problem but cannot approve or close any draft requirement.
+
 The prior 25.7 × 8.7 mm pocket proposal is `provisional`, not a charger
 measurement. The measured charger envelope is 25.2 × 8.2 mm. Charger-pocket
 depth remains `TBD`.
@@ -83,32 +102,43 @@ approved coupon plan rather than selected silently.
 
 ## Keepout Planning
 
-| Region | Planning constraint | Classification |
-|---|---|---|
-| Orange side button | Keep accessible; do not use as a hard clamp point | `image_supported`; exact clearance `TBD` |
-| Adjacent side openings | Keep open | Function `TBD`; presumed speaker |
-| Opposite-side cover | Preserve opening access | Function `TBD`; presumed SIM/service cover |
-| Small pinhole | Keep open | Function `TBD`; presumed microphone |
-| Strap hinges | Allow rotation; do not load hinge joints | `image_supported`; exact clearance `TBD` |
+| Region | Planning constraint | Evidence classification | Coupon inspection |
+|---|---|---|---|
+| Orange side button | Keep accessible; do not use as a hard clamp point | `image_supported`; EV-005 and EV-008 | Confirm no contact or actuation during placement |
+| Adjacent side openings | Keep open; exact function `TBD` | `image_supported` presence; EV-008 | Confirm openings remain visually unobstructed |
+| Opposite-side cover | Preserve opening access; exact function `TBD` | `image_supported` presence; EV-006 | Confirm coupon does not overlap required opening path |
+| Small pinhole | Keep open; exact function `TBD` | `image_supported` presence; EV-007 | Confirm pinhole remains visually unobstructed |
+| Strap hinges | Allow rotation; do not load hinge joints | `image_supported`; EV-004, EV-005, and EV-007 | Confirm body support and no hinge clamping or normal support load |
 
 Privacy-reviewed front, side, and charger photographs are indexed under
 `evidence/2026-07-26_measurements/README.md`. Back-label and charging-recess
 photographs must not be committed until QR codes, serial identifiers, and IMEI
 information have been removed.
 
-## Required Approval Sequence
+## Experimental Coupon Authorization Sequence
 
-Before any CAD generation, the Product Owner must explicitly:
+Before generating `Fit-Test Coupon CAD v0.1`, the Product Owner must explicitly:
 
-1. approve the governing Requirement and Specification versions;
-2. approve the selected concept and D-007 or another architecture option;
-3. resolve or accept the listed measurement limitations; and
-4. authorize generation of the specifically named CAD deliverable.
+1. approve the exact `FIT_TEST_PLAN_v0.1.md` version;
+2. accept the measurement limitations documented in that version; and
+3. authorize generation of the named `Fit-Test Coupon CAD v0.1`.
 
-After CAD review, separate explicit PO approval is required before generating
-printable output. A further separate explicit PO authorization is required
-before sending any file to a printer. Task acceptance does not provide either
-authorization.
+Full character concept approval is not required for this neutral mechanical
+coupon. Coupon authorization does not approve any draft Requirement, Product
+Specification, concept, Product Mechanical Design, printable output, or print.
+
+Coupon geometry and generated files are not evidence. Coupon results become
+physical evidence only after an authorized coupon is physically tested, the
+method and observations are recorded, and the Product Owner confirms the
+physical results and their limitations.
+
+After coupon CAD review, separate explicit PO approval is required before
+generating printable output. A further separate explicit PO authorization is
+required before sending anything to a printer. Task acceptance provides none of
+these approvals or authorizations.
+
+Product Mechanical Design CAD remains outside T-004 and must follow the normal
+Requirement, Product Specification, concept, and Mechanical Design gates.
 
 ## Exit Criteria for T-004 Preparation
 
@@ -116,5 +146,7 @@ authorization.
 - All input values are classified by provenance.
 - Remaining geometry is `TBD`, not invented.
 - I-001 through I-010 are considered in the plan.
-- PO approval requests for CAD, printable output, and printing remain separate.
+- Experimental Coupon CAD and Product Mechanical Design CAD are not conflated.
+- PO authorization for Coupon CAD, approval for printable output, and
+  authorization to send to a printer remain separate.
 - No CAD, sliced file, purchase, or external action has occurred.
