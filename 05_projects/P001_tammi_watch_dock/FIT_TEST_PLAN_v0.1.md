@@ -1,15 +1,22 @@
 # P001 Mechanical Fit-Test Preparation
 
 **Version:** v0.1  
-**Status:** Draft  
+**Status:** Approved  
 **Product:** P001  
 **Related task:** T-004  
-**Approval state:** Pending  
+**Approval state:** Approved  
+**Approved by:** Product Owner  
+**Approved date:** 2026-07-26  
+**Measurement limitations accepted:** Yes; 2026-07-26  
+**Authorized CAD:** `Fit-Test Coupon CAD v0.1`  
+**Authorization decision:** D-008  
 **Printable output authorized:** No  
 **Sending to printer authorized:** No
 
-This is a documentation and planning artifact only. It does not authorize CAD,
-slicing, purchasing, printable-output generation, or printing.
+Approval of this plan authorizes only generation of the named experimental
+`Fit-Test Coupon CAD v0.1`. It does not authorize Product Mechanical Design CAD,
+slicing, purchasing, printable-output generation, or sending anything to a
+printer.
 
 ## CAD Scope Distinction
 
@@ -123,6 +130,10 @@ Before generating `Fit-Test Coupon CAD v0.1`, the Product Owner must explicitly:
 2. accept the measurement limitations documented in that version; and
 3. authorize generation of the named `Fit-Test Coupon CAD v0.1`.
 
+The Product Owner satisfied these three conditions on 2026-07-26, recorded by
+D-008. The authorization is active only for `Fit-Test Coupon CAD v0.1` and does
+not expand the scope below.
+
 Full character concept approval is not required for this neutral mechanical
 coupon. Coupon authorization does not approve any draft Requirement, Product
 Specification, concept, Product Mechanical Design, printable output, or print.
@@ -149,4 +160,5 @@ Requirement, Product Specification, concept, and Mechanical Design gates.
 - Experimental Coupon CAD and Product Mechanical Design CAD are not conflated.
 - PO authorization for Coupon CAD, approval for printable output, and
   authorization to send to a printer remain separate.
-- No CAD, sliced file, purchase, or external action has occurred.
+- No CAD, sliced file, purchase, or external action had occurred when this plan
+  was approved.

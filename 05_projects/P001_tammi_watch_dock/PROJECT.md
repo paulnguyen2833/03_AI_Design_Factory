@@ -230,7 +230,6 @@ This Requirement-discovery record does not:
 | What placement/removal behavior would the PO consider comfortable? | Product Owner | No until usability criteria are finalized | Acceptance criteria |
 | What are the authoritative functions and exact keepouts for the side openings, pinhole, button, and cover? | Product Owner | Yes before geometry is locked | I-009; T-004 |
 | Can the PO provide a privacy-safe rear charging-interface view confirming the four watch contacts and charging-surface orientation? | Product Owner | Yes before those observations become image-supported | I-010; T-003 |
-| Does the PO approve the exact Fit-Test Plan v0.1, accept its documented measurement limitations, and authorize the named Fit-Test Coupon CAD v0.1? | Product Owner | Yes before experimental coupon CAD | T-004 |
 
 ## Measurement Dependencies
 
@@ -276,8 +275,9 @@ identified explicitly and are not production evidence.
 ## Existing Related Records
 
 - **Tasks:** T-001 and T-003 are active; T-004 is `Todo` in Sprint S001.
-- **Decisions:** D-007 proposes the Mechanical Core/Character Shell separation;
-  no approved P001 product Decision exists.
+- **Decisions:** D-007 proposes the Mechanical Core/Character Shell separation.
+  D-008 approves Fit-Test Plan v0.1, accepts its documented measurement
+  limitations, and authorizes only `Fit-Test Coupon CAD v0.1`.
 - **Issues:** I-001 through I-010 include current blockers, conflicts, and risk.
 - **Experiments:** E-001 through E-003 are planned snap-fit clearance
   experiments and provide no measurement evidence for Requirement v0.1.
@@ -287,12 +287,12 @@ identified explicitly and are not production evidence.
 
 ## Next Review
 
-Before generation of the experimental `Fit-Test Coupon CAD v0.1`, the PO must
-approve the exact `FIT_TEST_PLAN_v0.1.md`, accept its documented measurement
-limitations, and explicitly authorize that named coupon CAD deliverable. A
-neutral mechanical coupon does not require full character concept approval.
-Coupon authorization does not approve a Product Specification or Product
-Mechanical Design.
+On 2026-07-26 the PO approved the exact `FIT_TEST_PLAN_v0.1.md`, accepted its
+documented measurement limitations, and authorized generation of only
+`Fit-Test Coupon CAD v0.1`; D-008 records that authority. A neutral mechanical
+coupon does not require full character concept approval. This authorization
+does not approve a Product Specification or Product Mechanical Design and does
+not authorize printable output or sending anything to a printer.
 
 Product Mechanical Design CAD remains subject to the normal lifecycle gates:
 the governing Requirement and Product Specification versions and selected
@@ -301,4 +301,6 @@ mechanical-design work. Separate PO approval is required before generating
 printable output, and separate PO authorization is required before sending
 anything to a printer.
 
-The recommended next review is D-007 and the proposed T-004 fit-test plan.
+The authorized next execution step is generation of `Fit-Test Coupon CAD v0.1`
+within the approved plan. D-007 remains proposed and is not required for the
+neutral coupon.
