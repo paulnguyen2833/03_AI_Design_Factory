@@ -2,3 +2,4 @@ task_id,sprint,product_id,title,status,priority,owner,acceptance_criteria
 T-001,S001,P001,Thu thập requirement,Doing,High,PO,Requirement v0.1 được xác nhận
 T-002,S001,P001,Tạo ba concept,Todo,High,AI,Ba phương án có trade-off
 T-003,S001,P001,Đo thiết bị và phụ kiện,Doing,High,PO,Bảng đo có ảnh hoặc nguồn đo
+T-004,S001,P001,Chuẩn bị fit-test hốc sạc và cradle,Todo,High,AI,Coupon có ba clearance và kiểm tra cable cradle keepout; PO duyệt trước printable output và duyệt riêng trước khi gửi máy in

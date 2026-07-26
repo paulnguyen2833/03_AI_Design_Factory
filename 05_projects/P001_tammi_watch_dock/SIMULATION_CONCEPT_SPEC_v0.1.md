@@ -15,6 +15,12 @@
 > Specification, verified evidence, mechanical design, or authorization to
 > print, purchase, release, publish, or perform any external action.
 
+**Supersession notice (2026-07-26):** the PO subsequently supplied measured
+watch and charger inputs recorded in `PROJECT.md`. All conflicting dimensional
+values in this file remain `simulation_only` and are superseded for planning.
+They are preserved here solely as dry-run history and must not be used as
+verified evidence or CAD input.
+
 ## Simulation Boundary
 
 The supplied dataset is used only as unverified test input. Its dimensions,
@@ -104,4 +110,3 @@ specification may pass a real approval gate. The recommended next action is for
 the PO to provide the T-003 physical measurement evidence and printer
 configuration, resolve the character direction, and correct/source the
 simulation dataset before reviewing three real concept options.
-
